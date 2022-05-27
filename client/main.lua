@@ -122,8 +122,8 @@ end
 ---- Client Events ----
 -----------------------
 
-RegisterKeyMapping('togglelocks', 'Toggle Vehicle Locks', 'keyboard',"U")
-RegisterCommand('togglelocks', function()
+RegisterKeyMapping('togglelocksz', 'Toggle Vehicle Locks', 'keyboard',"U")
+RegisterCommand('togglelocksz', function()
     ToggleVehicleLocksX(GetVehicle())
 end)
 
