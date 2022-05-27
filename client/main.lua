@@ -121,7 +121,7 @@ end
 -----------------------
 ---- Client Events ----
 -----------------------
-
+-- change key az L TO U
 RegisterKeyMapping('togglelocksz', 'Toggle Vehicle Locks', 'keyboard',"U")
 RegisterCommand('togglelocksz', function()
     ToggleVehicleLocksX(GetVehicle())
