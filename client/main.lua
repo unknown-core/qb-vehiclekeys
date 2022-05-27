@@ -122,9 +122,9 @@ end
 ---- Client Events ----
 -----------------------
 
-RegisterKeyMapping('togglelocks', 'Toggle Vehicle Locks', 'keyboard',"u")
+RegisterKeyMapping('togglelocks', 'Toggle Vehicle Locks', 'keyboard',"U")
 RegisterCommand('togglelocks', function()
-    ToggleVehicleLocks(GetVehicle())
+    ToggleVehicleLocksX(GetVehicle())
 end)
 
 AddEventHandler('onResourceStart', function(resourceName)
@@ -270,7 +270,7 @@ function GetVehicle()
     return vehicle
 end
 
-function ToggleVehicleLocks(veh)
+function ToggleVehicleLocksX(veh)
     if veh then
         if not isBlacklistedVehicle(veh) then
             if HasKeys(QBCore.Functions.GetPlate(veh)) then
